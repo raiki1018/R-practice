@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from "./Views/App"
 // import GetData from "./GetData";
 import reportWebVitals from './reportWebVitals';
-import FrontC from "./frontC"
+// import FrontC from "./frontC"
 
 // import { createBrowserHistory } from "history";
 
@@ -12,7 +12,7 @@ import FrontC from "./frontC"
 
 ReactDOM.render(
   <React.StrictMode>
-    <FrontC />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
