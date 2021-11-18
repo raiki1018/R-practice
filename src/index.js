@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+// import GetData from "./GetData";
 import reportWebVitals from './reportWebVitals';
-import { Router } from 'react-router-dom';
-import { createBrowserHistory } from "history";
+import FrontC from "./frontC"
 
-const hist = createBrowserHistory();
+// import { createBrowserHistory } from "history";
+
+// const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist}>
-    <App />
-  </Router>,
+  <React.StrictMode>
+    <FrontC />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

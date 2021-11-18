@@ -19,9 +19,8 @@ import ListItemText from '@mui/material/ListItemText';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import CreateIcon from '@mui/icons-material/Create';
 import AppsIcon from '@mui/icons-material/Apps';
-import CounterApp from './CounterApp';
 import slide from "./slide";
-import taskBoard from "./taskBoard";
+import taskBoard2 from "./taskBoard2";
 
 
 const drawerWidth = 240;
@@ -137,7 +136,7 @@ export default function PersistentDrawerLeft() {
               <ListItemText primary="個人情報研修"　/>
             </ListItem>
           </Link>
-          <Link to="/taskBoard" style={{boxShadow:"none",textDecoration:"none",color:"inherit",fontFamily:"Montserrat,sans-serif"}}>
+          <Link to="/taskBoard2" style={{boxShadow:"none",textDecoration:"none",color:"inherit",fontFamily:"Montserrat,sans-serif"}}>
             <ListItem button>
               <ListItemIcon><CreateIcon /></ListItemIcon>
               <ListItemText primary="個人情報テスト"　/>
@@ -148,7 +147,7 @@ export default function PersistentDrawerLeft() {
       <Main open={open}>
         <DrawerHeader />
           <Route path="/slide" component={slide} />
-          <Route path="/taskBoard" component={taskBoard} />
+          <Route path="/taskBoard2" component={taskBoard2} />
       </Main>
     </Box>
   );
