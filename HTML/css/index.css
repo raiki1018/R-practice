@@ -1,0 +1,29 @@
+p.sub-title1 {
+  color: aqua;
+}
+
+p#sub-title2 {
+    color: pink;
+  }
+
+h1 {
+    font-size: 50pt;
+    color: red;
+    font-weight: bold;
+}
+
+div.box1 {
+    height: 100px;
+    width: 100px;
+    background-color: royalblue;
+}
+div.box2 {
+    height: 100px;
+    width: 100px;
+    background-color:turquoise;
+}
+div.box3 {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
