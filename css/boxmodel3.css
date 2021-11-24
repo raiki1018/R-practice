@@ -1,0 +1,26 @@
+body {
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    margin: 5px;
+}
+
+div.header {
+    background-image:url("../img/takachiho.jpg");
+    height: 400px;
+    width: auto;
+}
+div.title {
+    background-color: green;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    width: auto;
+    color: ivory;
+    display: flex;
+    justify-content: center;
+
+}

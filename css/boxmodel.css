@@ -1,0 +1,20 @@
+body {
+    background-color: skyblue;
+}
+
+div {
+    background-color: thistle;
+    height: 150px;
+    width: autos;
+}
+
+p {
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+a {
+    background-color: tomato;
+}
