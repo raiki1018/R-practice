@@ -13,5 +13,11 @@
 // y--;
 // console.log(y);
 
+'use strict';
+
 let age = 30;
-const name = "田中太郎";
+const prename = "田中太郎"
+
+age = age + 2
+
+console.log(`${prename}さんの年齢は${age}です`);
