@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハンバーガーメニュー2</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
+        }
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 15px;
+            font-size: 20px;
+        }
+        #main {
+            background-color: #eee;
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            top:0;
+            left:40px;
+            padding: 8px;
+            margin-left: 0px;
+            z-index: 1;
+            overflow: auto;
+            box-sizing: border-box;
+            
+        }
+        #cover {
+            background-color: #000;
+            opacity: .6;
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            top:0;
+            left:0;
+            display: none;
+            z-index: 2;
+        }
+        #menu {
+            background-color: #4c80ee;
+            color: #fff;
+            position:absolute;
+            top:0;
+            left: -140px;
+            padding: 8px;
+            width: 180px;
+            min-height: 100%;
+            z-index: 3;
+            box-sizing: border-box;
+            transition: .4s;
+            font-display: center;
+        
+        }
+        #open, #close {
+            float: left;
+            cursor: pointer;
+        }
+        #cover.menu-open {
+            display: block;
+        }
+        #menu.menu-open {
+            left:0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <i class="fa fa-times" id="close"></i>
+        <ul>
+            <li>Top</li>
+            <li>Plofile</li>
+            <li>History</li>
+            <li>Message</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="main">
+        <i class="fa fa-bars" id="open"></i>
+        <h1>ようこそ</h1>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+        <p>hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! hello! </p>
+    </div>
+    <div id="cover"></div>
+    <script>
+        `use strict`;
+
+        // const open = document.getElementById("open");
+        // const close= document.getElementById("close");
+
+        const menu = document.getElementById("menu");
+        const cover = document.getElementById("cover");
+
+        menu.addEventListener("mouseover", () => {
+            menu.className = "menu-open";
+            cover.className = "menu-open";
+        });
+
+        menu.addEventListener("mouseleave", () => {
+            menu.className = "";
+            cover.className = "";
+        });
+
+    </script>
+</body>
+</html>
